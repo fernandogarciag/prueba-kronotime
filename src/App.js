@@ -1,8 +1,9 @@
-import Header from "./components/header";
-import Hero from "./components/hero";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
 import Products from "./components/Products";
 import Parallax from "./components/Parallax";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
+import Modal from "./components/Modal";
 
 const App = () => (
   <>
@@ -11,6 +12,7 @@ const App = () => (
     <Products />
     <Parallax />
     <Footer />
+    <Modal />
   </>
 );
 

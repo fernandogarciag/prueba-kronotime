@@ -6,13 +6,13 @@ const Container = ({ data }) => (
     <Slider {...data.settings}>
       {data.products.map((product, key) => (
         <div key={key}>
-          <div className="card position-relative border-0 mx-5">
+          <div className="card position-relative border-0 mx-1 mx-ls-5">
             <span className="bg-danger position-absolute end-0 p-2 rounded text-white">
               {product.discount}%
             </span>
             <a href="/">
               <img
-                className="card-img-top w-50 mx-auto"
+                className="card-img-top w-75 mx-auto"
                 src={product.image}
                 alt="..."
                 width="100"

@@ -26,7 +26,7 @@ const Dropdown = ({ content }) => (
                 <div className="navbar-nav row">
                   {category.brands.map((brand, key) => (
                     <div
-                      className={`nav-item mx-3 col-${category.column}`}
+                      className={`nav-item col-${category.column}`}
                       key={key}
                     >
                       <a className="nav-link d-inline" href={brand.link}>
