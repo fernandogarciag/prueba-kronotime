@@ -15,7 +15,7 @@ const Dropdown = ({ content }) => (
         className="dropdown-menu mt-0 w-100 shadow border-outline-success border-0 rounded-0 navbar-dark bg-dark"
         aria-labelledby="navbarDropdownMenuLink"
       >
-        <div className="container mx-auto">
+        <div className="container-lg mx-auto">
           <div className="row">
             {content.categories.map((category, key) => (
               <div className="col-6 col-md" key={key}>
