@@ -2,7 +2,7 @@ import Dropdown from "./Dropdown";
 
 const Container = ({ data }) => (
   <section>
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark position-relative">
       <a className="navbar-brand mx-1 ms-xl-4" href="/">
         <img
           src="https://cdn.shopify.com/s/files/1/0275/8420/0792/files/logo-invicta_180x.png?v=1575474967"
@@ -16,7 +16,7 @@ const Container = ({ data }) => (
         />
       </a>
       <div
-        className="collapse navbar-collapse justify-content-center pe-0 pe-xl-5 me-0 me-xl-5"
+        className="collapse navbar-collapse justify-content-lg-center ps-2 pe-0 pe-xl-5 me-0 me-xl-5"
         id="navbarNav"
       >
         <ul className="navbar-nav">
@@ -33,27 +33,27 @@ const Container = ({ data }) => (
               {data.fifth.title}
             </a>
           </li>
-          <li className="nav-item ms-2">
+          <li className="nav-item ms-lg-2">
             <a className="btn btn-danger text-uppercase" href="/" role="button">
               {data.sixth.title}
             </a>
           </li>
         </ul>
       </div>
-      <div className="div-inline ms-0 me-lg-3 ms-xl-5">
-        <i className="fa fa-search text-light ms-0 ms-lg-3 ms-xl-5 me-1 me-lg-2 me-xl-3"></i>
-        <i className="fa fa-heart text-light me-1 me-lg-2 me-xl-3"></i>
-        <i className="fa fa-shopping-bag text-light me-1 me-gl-2 me-xl-3"></i>
+      <div className="div-inline position-absolute end-0 top-0 pt-4">
+        <i className="fa fa-search text-light me-2 me-xl-3"></i>
+        <i className="fa fa-heart text-light me-2 me-xl-3"></i>
+        <i className="fa fa-shopping-bag text-light me-2 me-xl-3"></i>
         <button
-          className="navbar-toggler ms-1"
+          class="navbar-toggler me-1"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
       </div>
     </nav>
